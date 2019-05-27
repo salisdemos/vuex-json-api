@@ -3,6 +3,7 @@
 exports[`returns the default state for a collection module 1`] = `
 Object {
   "currentPage": null,
+  "errors": Array [],
   "initial": Object {},
   "items": Object {},
   "loading": false,
@@ -12,6 +13,7 @@ Object {
 
 exports[`returns the default state for a non-collection module 1`] = `
 Object {
+  "errors": Array [],
   "initial": Object {},
   "item": Object {},
   "loading": false,
