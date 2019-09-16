@@ -1,7 +1,6 @@
 const FakeServer = require('fake-json-api-server/src/nodeServer')
 
-new FakeServer({
-  port: 3000,
+let serverConfig = {
   resources: {
     tag: {
       data: [
@@ -53,4 +52,13 @@ new FakeServer({
       ]
     }
   }
-});
+}
+
+function startServer (port) {
+  return new FakeServer({
+    port,
+    ...serverConfig
+  })
+}
+
+export { serverConfig, startServer }
