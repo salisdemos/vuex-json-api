@@ -28,4 +28,8 @@ module.exports = {
       'jest-transform-stub',
     '^.+\\.(js|jsx)?$': 'babel-jest'
   },
+
+  // setupFiles: [
+  //   '<rootDir>/test/server.js'
+  // ]
 };
