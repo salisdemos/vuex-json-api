@@ -9,7 +9,7 @@
   "homepage": "https://vuex-json-api.efrane.com",
   "main": "index.js",
   "scripts": {
-    "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "unit": "jest --config jest.config.js",
     "test": "yarn unit",
     "tdd": "yarn unit --watch",
     "lint": "eslint --ext .js,.vue src test/unit",
@@ -18,6 +18,7 @@
     "vuepress:build": "vuepress build docs"
   },
   "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "axios": "^0.*",
     "json-api-normalizer": "^0.4",
     "qs": "~6.7.0"
@@ -28,6 +29,9 @@
     "vuex": "3.*"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",
@@ -39,11 +43,14 @@
     "eslint-plugin-vue": "^4.0.0",
     "fake-json-api-server": "^1.6.0",
     "husky": "^2.4.0",
+    "jest": "^24.9.0",
+    "jest-transform-stub": "^2.0.0",
     "jsdoc-to-markdown": "^5.0.0",
     "mermaid": "^8.0.0",
     "node-sass": "^4.12.0",
     "portfinder": "^1.0.13",
     "vue": "^2.6.10",
+    "vue-jest": "^3.0.5",
     "vue-template-compiler": "^2.5.2",
     "vuepress": "^0.14.11"
   },
